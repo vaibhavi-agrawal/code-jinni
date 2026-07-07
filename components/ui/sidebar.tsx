@@ -21,6 +21,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
+  TooltipProvider,
 } from "@/components/ui/tooltip"
 import { PanelLeftIcon } from "lucide-react"
 
@@ -125,7 +126,30 @@ function SidebarProvider({
     [state, open, setOpen, isMobile, openMobile, setOpenMobile, toggleSidebar]
   )
 
-  return (
+//   return (
+//     <SidebarContext.Provider value={contextValue}>
+//       <div
+//         data-slot="sidebar-wrapper"
+//         style={
+//           {
+//             "--sidebar-width": SIDEBAR_WIDTH,
+//             "--sidebar-width-icon": SIDEBAR_WIDTH_ICON,
+//             ...style,
+//           } as React.CSSProperties
+//         }
+//         className={cn(
+//           "group/sidebar-wrapper flex min-h-svh w-full has-data-[variant=inset]:bg-sidebar",
+//           className
+//         )}
+//         {...props}
+//       >
+//         {children}
+//       </div>
+//     </SidebarContext.Provider>
+//   )
+// }
+return (
+  <TooltipProvider delayDuration={0}>
     <SidebarContext.Provider value={contextValue}>
       <div
         data-slot="sidebar-wrapper"
@@ -145,7 +169,8 @@ function SidebarProvider({
         {children}
       </div>
     </SidebarContext.Provider>
-  )
+  </TooltipProvider>
+)
 }
 
 function Sidebar({
