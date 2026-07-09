@@ -94,6 +94,7 @@ model StarMark {
   @@unique([userId , playgroundId])
 }
 
+
 model TemplateFile {
   id  String @id @default(cuid()) @map("_id")
   content Json
@@ -102,6 +103,7 @@ model TemplateFile {
   playgroundId String @unique
   playground   Playground @relation(fields: [playgroundId], references: [id], onDelete: Cascade)
 }
+// each prject have their own related templates
 
 
 model ChatMessage {
