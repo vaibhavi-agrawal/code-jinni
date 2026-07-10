@@ -1,7 +1,6 @@
 # 🧞 CodeJinni  – AI-Powered Web IDE
 
 
-
 **CodeJinni** is a modern AI-powered web IDE that runs entirely inside your browser. It combines the power of **Next.js**, **WebContainers**, **Monaco Editor**, and **local Large Language Models (LLMs)** through **Ollama** to deliver an intelligent coding experience without requiring a traditional desktop IDE.
 
 With AI-assisted code completion, an interactive chat assistant, built-in terminal, multiple project templates, and instant code execution, CodeJinni brings the complete development workflow into the browser.
@@ -156,10 +155,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ##  Acknowledgements
 
-* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
-* [Ollama](https://ollama.com/) – for offline LLMs
-* [WebContainers](https://webcontainers.io/)
-* [xterm.js](https://xtermjs.org/)
-* [NextAuth.js](https://next-auth.js.org/)
-
+Built using Next.js, Monaco Editor, WebContainers, Ollama, xterm.js, NextAuth.js, Tailwind CSS, and shadcn/ui.
 ```
